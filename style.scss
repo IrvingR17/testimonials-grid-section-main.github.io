@@ -27,24 +27,25 @@ $lgBlue: hsl(210, 46%, 95%);
     grid-template-columns: auto auto auto auto;
     grid-template-rows: auto auto;
     background-color: lightgreen;
-    gap: 1rem;
+    gap: 0.5rem;
+    width: 370px;
 
         .card1 {
-            grid-area: ;
+            grid-area: 1 / 1 / 2 / 3;
         }
-        .card3 {
-            grid-area: ;
+        .card3 { 
+            grid-area: 1 / 4 / 3 / 5;
         }
         .card5 {
-            
+            grid-area: 2 / 2 / 3 / 4;
         }
 }
 
 div {
     background-color: blue;
-    width: 100%;
-    height: 100%;
     font-size: 5rem;
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
