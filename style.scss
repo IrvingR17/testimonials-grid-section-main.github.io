@@ -25,14 +25,15 @@ $font: 'Barlow Semi Condensed', sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: $lgBlue;
+
 }
 
 .container {
     display: grid;
-    //grid-auto-rows: max-content;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 1025px;
-    background-color: lightgreen;
+    background-color: $lgBlue;
     gap: 2.5rem;
 
         .card1, .card2, .card3, .card4, .card5 {
@@ -48,6 +49,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
         .card1 {
             grid-area: 1 / 1 / 2 / 3;
             background-color: $modViolet;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             
             .card1-header {
                 display: flex;
@@ -64,7 +66,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
 
                     span {
                         font-size: 1rem;
-                        color: $lGray;
+                        color: rgba(255, 255, 255, 50%);
                     }
                 }
             }
@@ -77,13 +79,14 @@ $font: 'Barlow Semi Condensed', sans-serif;
                 }
                 .card1-body-text2 {
                     font-size: 1.2rem;
-                    color: $lGray;
+                    color: rgba(255, 255, 255, 50%);
                     font-weight: 500;
                 }
             }
         }
         .card2 {
             background-color: $vdgBlue;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
             .card2-header {
                 display: flex;
@@ -100,7 +103,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
 
                     span {
                         font-size: 1rem;
-                        color: $lGray;
+                        color: rgba(255, 255, 255, 50%);
                     }
                 }
             }
@@ -113,7 +116,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
                 }
                 .card2-body-text2 {
                     font-size: 1.2rem;
-                    color: $lGray;
+                    color: rgba(255, 255, 255, 50%);
                     font-weight: 500;
                 }
             }
@@ -121,17 +124,119 @@ $font: 'Barlow Semi Condensed', sans-serif;
         .card3 { 
             grid-area: 1 / 4 / 3 / 5;
             background-color: $white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            .card3-header {
+                display: flex;
+
+                .card3-avatar {
+                    width: 3rem;
+                    border-radius: 50%;
+                    border: 0.2rem solid $lGray;
+                    margin-right: 1.5rem;
+                }
+                .card3-name {
+                    font-size: 1.5rem;
+                    color: $vdbBlue;
+
+                    span {
+                        font-size: 1rem;
+                        color: rgba(25, 33, 46, 50%);
+                    }
+                }
+            }
+            .card3-body {
+
+                .card3-body-text1 {
+                    font-size: 1.85rem;
+                    padding: 1.5rem 0;
+                    color: $vdbBlue;
+                }
+                .card3-body-text2 {
+                    font-size: 1.2rem;
+                    color: rgba(25, 33, 46, 50%);
+                    font-weight: 500;
+                }
+            }
         }
         .card4 {
             background-color: $white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            .card4-header {
+                display: flex;
+
+                .card4-avatar {
+                    width: 3rem;
+                    border-radius: 50%;
+                    border: 0.2rem solid $lGray;
+                    margin-right: 1.5rem;
+                }
+                .card4-name {
+                    font-size: 1.5rem;
+                    color: $vdbBlue;
+
+                    span {
+                        font-size: 1rem;
+                        color: rgba(25, 33, 46, 50%);
+                    }
+                }
+            }
+            .card4-body {
+
+                .card4-body-text1 {
+                    font-size: 1.85rem;
+                    padding: 1.5rem 0;
+                    color: $vdbBlue;
+                }
+                .card4-body-text2 {
+                    font-size: 1.2rem;
+                    color: rgba(25, 33, 46, 50%);
+                    font-weight: 500;
+                }
+            }
         }
         .card5 {
             grid-area: 2 / 2 / 3 / 4;
             background-color: $vdbBlue;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            .card5-header {
+                display: flex;
+
+                .card5-avatar {
+                    width: 3rem;
+                    border-radius: 50%;
+                    border: 0.2rem solid $modViolet;
+                    margin-right: 1.5rem;
+                }
+                .card5-name {
+                    font-size: 1.5rem;
+                    color: $white;
+
+                    span {
+                        font-size: 1rem;
+                        color: rgba(255, 255, 255, 50%);
+                    }
+                }
+            }
+            .card5-body {
+
+                .card5-body-text1 {
+                    font-size: 1.85rem;
+                    padding: 1.5rem 0;
+                    color: $white;
+                }
+                .card5-body-text2 {
+                    font-size: 1.2rem;
+                    color: rgba(255, 255, 255, 50%);
+                    font-weight: 500;
+                }
+            }
         }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 850px) {
     .container {
         .card1 {
             grid-area: auto;
