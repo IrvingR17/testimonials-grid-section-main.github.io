@@ -55,7 +55,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
             .quotation {
                 position: absolute;
                 top: 0;
-                left: 32rem;
+                right: 8rem;
                 width: 100px;
                 z-index: 2;
             }
@@ -250,7 +250,6 @@ $font: 'Barlow Semi Condensed', sans-serif;
     .flex {
         align-items: flex-start;
     }
-
     .container {
         .card1 {
             grid-area: auto;
