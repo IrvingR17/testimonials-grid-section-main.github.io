@@ -12,7 +12,6 @@
   align-items: center;
   height: 100vh;
   background-color: hsl(210deg, 46%, 95%);
-  overflow: scroll;
 }
 
 .container {
@@ -35,9 +34,19 @@
   grid-area: 1/1/2/3;
   background-color: hsl(263deg, 55%, 52%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: relative;
+  z-index: 1;
+}
+.container .card1 .quotation {
+  position: absolute;
+  top: 0;
+  left: 32rem;
+  width: 100px;
+  z-index: 2;
 }
 .container .card1 .card1-header {
   display: flex;
+  z-index: 3;
 }
 .container .card1 .card1-header .card1-avatar {
   width: 3rem;
@@ -52,6 +61,9 @@
 .container .card1 .card1-header .card1-name span {
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.5);
+}
+.container .card1 .card1-body {
+  z-index: 3;
 }
 .container .card1 .card1-body .card1-body-text1 {
   font-size: 1.85rem;

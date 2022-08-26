@@ -26,7 +26,6 @@ $font: 'Barlow Semi Condensed', sans-serif;
     align-items: center;
     height: 100vh;
     background-color: $lgBlue;
-    overflow: scroll;
 }
 
 .container {
@@ -50,9 +49,19 @@ $font: 'Barlow Semi Condensed', sans-serif;
             grid-area: 1 / 1 / 2 / 3;
             background-color: $modViolet;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            
+            position: relative;
+            z-index: 1;
+
+            .quotation {
+                position: absolute;
+                top: 0;
+                left: 32rem;
+                width: 100px;
+                z-index: 2;
+            }
             .card1-header {
                 display: flex;
+                z-index: 3;
 
                 .card1-avatar {
                     width: 3rem;
@@ -71,6 +80,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
                 }
             }
             .card1-body {
+                z-index: 3;
 
                 .card1-body-text1 {
                     font-size: 1.85rem;
