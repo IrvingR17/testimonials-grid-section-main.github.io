@@ -12,6 +12,7 @@
   align-items: center;
   height: 100vh;
   background-color: hsl(210deg, 46%, 95%);
+  overflow: scroll;
 }
 
 .container {
@@ -190,6 +191,9 @@
 }
 
 @media screen and (max-width: 850px) {
+  .flex {
+    align-items: flex-start;
+  }
   .container .card1 {
     grid-area: auto;
   }

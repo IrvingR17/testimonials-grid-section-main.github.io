@@ -26,7 +26,7 @@ $font: 'Barlow Semi Condensed', sans-serif;
     align-items: center;
     height: 100vh;
     background-color: $lgBlue;
-
+    overflow: scroll;
 }
 
 .container {
@@ -237,6 +237,10 @@ $font: 'Barlow Semi Condensed', sans-serif;
 }
 
 @media screen and (max-width: 850px) {
+    .flex {
+        align-items: flex-start;
+    }
+
     .container {
         .card1 {
             grid-area: auto;
